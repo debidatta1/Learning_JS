@@ -12,4 +12,5 @@ The 100DaysOfCode challenge is a commitment to code for at least an hour every d
 - Installed Node.js and Run the 1st code Console.log();
 ### Day (2/100)
 - Today, I delved into the fundamentals of JavaScript, focusing on variables and data types.
-
+### Day (3/100)
+- Started Once again
