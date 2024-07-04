@@ -1,4 +1,4 @@
-//  Primitive
+//  Primitive ; call-by-value
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 // Number: Represents both integer and floating-point numbers. Example: 5, 3.14.
@@ -25,7 +25,7 @@ const bigNumber = 3456543576654356754n
 
 
 
-// Reference (Non primitive) (Object Data Types)
+// Reference (Non primitive) (Object Data Types) ; call-by-reference
 
 // Array, Objects, Functions
 // Object: Represents a collection of key-value pairs (properties and methods). Example: { name: "John", age: 30 }.
@@ -46,3 +46,35 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// stack(primitive) and heap(non-primitive) :
+// stack use static memory allocaton and heap use dynamic.
+// static memory size and locattion of the memory is fixed at compile time
+// dynamic memory size and location of the memory can change at the runtime.
+
+let myYoutubename = "hiteshchoudhary"
+
+let anothername = myYoutubename
+
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
